@@ -1,0 +1,62 @@
+[
+  {
+    "id": "R-001",
+    "name": "Unauthorized data access",
+    "description": "Sensitive data is accessed by unauthorized users or services.",
+    "category": "security",
+    "base_impact": 5,
+    "base_likelihood": 3,
+    "eu_ai_act": ["Art. 9", "Art. 10"],
+    "nis2": ["Art. 21"],
+    "dora": ["Art. 6"],
+    "mitigations": ["C-002", "C-005"]
+  },
+  {
+    "id": "R-002",
+    "name": "Prompt injection and data exfiltration",
+    "description": "Model prompts are manipulated to reveal sensitive information.",
+    "category": "security",
+    "base_impact": 4,
+    "base_likelihood": 3,
+    "eu_ai_act": ["Art. 9", "Art. 15"],
+    "nis2": ["Art. 21"],
+    "dora": ["Art. 8"],
+    "mitigations": ["C-002", "C-004", "C-003"]
+  },
+  {
+    "id": "R-003",
+    "name": "Bias or discrimination",
+    "description": "Model outputs lead to unfair or discriminatory outcomes.",
+    "category": "ethical",
+    "base_impact": 4,
+    "base_likelihood": 2,
+    "eu_ai_act": ["Art. 10", "Art. 14"],
+    "nis2": ["Art. 21"],
+    "dora": ["Art. 6"],
+    "mitigations": ["C-003", "C-006"]
+  },
+  {
+    "id": "R-004",
+    "name": "Lack of traceability and logging",
+    "description": "Insufficient logs hinder accountability and incident response.",
+    "category": "operational",
+    "base_impact": 3,
+    "base_likelihood": 3,
+    "eu_ai_act": ["Art. 12"],
+    "nis2": ["Art. 21", "Art. 23"],
+    "dora": ["Art. 15"],
+    "mitigations": ["C-003", "C-005"]
+  },
+  {
+    "id": "R-005",
+    "name": "Model drift or performance degradation",
+    "description": "Model accuracy degrades due to data shifts or concept drift.",
+    "category": "resilience",
+    "base_impact": 3,
+    "base_likelihood": 3,
+    "eu_ai_act": ["Art. 15"],
+    "nis2": ["Art. 21"],
+    "dora": ["Art. 6"],
+    "mitigations": ["C-003"]
+  }
+]

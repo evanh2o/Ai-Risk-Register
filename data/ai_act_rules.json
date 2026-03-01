@@ -1,0 +1,114 @@
+{
+  "questions": [
+    {
+      "id": "Q1",
+      "text": "Does the system perform social scoring of natural persons by public or private actors?",
+      "help": "Social scoring means evaluating or classifying persons based on social behaviour or personal characteristics, leading to detrimental treatment.",
+      "if_yes": "PROHIBITED",
+      "if_no": "Q2"
+    },
+    {
+      "id": "Q2",
+      "text": "Does the system use real-time remote biometric identification in publicly accessible spaces for law enforcement?",
+      "help": "This covers live facial recognition and similar biometric identification deployed in public areas.",
+      "if_yes": "PROHIBITED",
+      "if_no": "Q3"
+    },
+    {
+      "id": "Q3",
+      "text": "Does the system exploit vulnerabilities of specific groups (age, disability, social situation) to materially distort behaviour?",
+      "help": "Subliminal techniques or exploitation of vulnerabilities causing harm are prohibited under Art. 5.",
+      "if_yes": "PROHIBITED",
+      "if_no": "Q4"
+    },
+    {
+      "id": "Q4",
+      "text": "Is the system used as a safety component of critical infrastructure (energy, transport, water, digital)?",
+      "help": "AI systems that are safety components in the management and operation of critical infrastructure are classified as high-risk (Annex III).",
+      "if_yes": "HIGH_RISK",
+      "if_no": "Q5"
+    },
+    {
+      "id": "Q5",
+      "text": "Is the system used in education or vocational training to determine access, assign, or assess students?",
+      "help": "Systems that determine access to education, evaluate learning outcomes, or assess appropriate levels of education (Annex III, 3).",
+      "if_yes": "HIGH_RISK",
+      "if_no": "Q6"
+    },
+    {
+      "id": "Q6",
+      "text": "Is the system used in employment, worker management, or recruitment (CV screening, interview evaluation, task allocation)?",
+      "help": "AI systems for recruitment, selection, HR decisions, task allocation, or monitoring of workers (Annex III, 4).",
+      "if_yes": "HIGH_RISK",
+      "if_no": "Q7"
+    },
+    {
+      "id": "Q7",
+      "text": "Is the system used to evaluate creditworthiness or establish credit scores of natural persons?",
+      "help": "Except for systems used to detect financial fraud (Annex III, 5b).",
+      "if_yes": "HIGH_RISK",
+      "if_no": "Q8"
+    },
+    {
+      "id": "Q8",
+      "text": "Is the system used by law enforcement for individual risk assessment, polygraph, evidence reliability, or crime prediction?",
+      "help": "AI systems used by law enforcement authorities for profiling, crime analytics, or risk assessment (Annex III, 6).",
+      "if_yes": "HIGH_RISK",
+      "if_no": "Q9"
+    },
+    {
+      "id": "Q9",
+      "text": "Is the system used in migration, asylum, or border control for risk assessment or document authentication?",
+      "help": "AI used to assess risks posed by persons entering the EU or for verifying document authenticity (Annex III, 7).",
+      "if_yes": "HIGH_RISK",
+      "if_no": "Q10"
+    },
+    {
+      "id": "Q10",
+      "text": "Is the system used in the administration of justice or democratic processes?",
+      "help": "AI used to assist judicial authorities in researching, interpreting facts and law, or applying the law (Annex III, 8).",
+      "if_yes": "HIGH_RISK",
+      "if_no": "Q11"
+    },
+    {
+      "id": "Q11",
+      "text": "Does the system interact directly with natural persons (e.g., chatbot, virtual assistant)?",
+      "help": "Systems that interact with persons must disclose they are AI (Art. 52 transparency obligation).",
+      "if_yes": "LIMITED_RISK",
+      "if_no": "Q12"
+    },
+    {
+      "id": "Q12",
+      "text": "Does the system generate or manipulate images, audio, or video content (deepfakes)?",
+      "help": "AI-generated or manipulated content must be labelled as such (Art. 52).",
+      "if_yes": "LIMITED_RISK",
+      "if_no": "MINIMAL_RISK"
+    }
+  ],
+  "classifications": {
+    "PROHIBITED": {
+      "label": "Prohibited",
+      "description": "This AI system falls under practices prohibited by Art. 5 of the AI Act. It cannot be placed on the EU market.",
+      "color": "#b71c1c",
+      "articles": ["Art. 5"]
+    },
+    "HIGH_RISK": {
+      "label": "High Risk",
+      "description": "This AI system is classified as high-risk under Annex III. It must comply with mandatory requirements including risk management, data governance, transparency, human oversight, and conformity assessment.",
+      "color": "#e65100",
+      "articles": ["Art. 6", "Art. 9", "Art. 10", "Art. 11", "Art. 12", "Art. 13", "Art. 14", "Art. 15"]
+    },
+    "LIMITED_RISK": {
+      "label": "Limited Risk",
+      "description": "This AI system has transparency obligations under Art. 52. Users must be informed they are interacting with AI, and generated content must be labelled.",
+      "color": "#f9a825",
+      "articles": ["Art. 52"]
+    },
+    "MINIMAL_RISK": {
+      "label": "Minimal Risk",
+      "description": "This AI system is classified as minimal risk. No mandatory requirements apply, but voluntary codes of conduct are encouraged.",
+      "color": "#2e7d32",
+      "articles": []
+    }
+  }
+}

@@ -1,0 +1,24 @@
+[
+  {
+    "id": "UC-001",
+    "name": "Customer support assistant",
+    "description": "LLM-assisted responses for customer support agents.",
+    "data_type": "personal",
+    "exposure": 3,
+    "model_type": "LLM",
+    "criticality": 3,
+    "owner": "Customer Operations",
+    "assumptions": "No automated decisioning; human approves final responses."
+  },
+  {
+    "id": "UC-002",
+    "name": "Fraud detection triage",
+    "description": "Model-assisted prioritization of fraud alerts for analyst review.",
+    "data_type": "sensitive",
+    "exposure": 4,
+    "model_type": "Classification",
+    "criticality": 4,
+    "owner": "Risk Management",
+    "assumptions": "Analysts review all flagged cases before action."
+  }
+]
